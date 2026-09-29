@@ -1,0 +1,30 @@
+{
+  "name": "@lunarstrings/resilient-fetch",
+  "version": "1.0.0",
+  "description": "Production-ready, resilient HTTP client wrapper with configurable exponential backoff, circuit breaking, and jitter.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/**/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "fetch",
+    "http-client",
+    "retry",
+    "circuit-breaker",
+    "resilience",
+    "typescript"
+  ],
+  "author": "lunarstrings <mieranjan@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
